@@ -1,0 +1,131 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+.jumbotron {
+  background-color: deepskyblue;
+  color: white;
+}
+
+.badge {
+  border-radius: 0rem 0.25rem 0.25rem 0rem;
+  padding: 5px;
+}
+
+.fancy label input[type='checkbox'] {
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: inherit;
+  width: 1em;
+  margin: 0;
+  color: inherit;
+  outline: none;
+  font-family: 'Font Awesome 5 Pro';
+  transition: 300ms ease-out;
+}
+.fancy label input[type='checkbox']::after {
+  content: '\f111';
+  display: inline-block;
+  text-align: center;
+  width: 1em;
+}
+.fancy label input[type='checkbox']:checked::after {
+  font-weight: 900;
+}
+.fancy label input[type='checkbox']:active {
+  -webkit-transform: scale(0.6);
+  transform: scale(0.6);
+}
+.fancy label input[type='checkbox'] + span {
+  margin-left: 0.35em;
+}
+.fancy label input[type='checkbox']:checked::after {
+  content: '\f058';
+  color: green;
+}
+
+.fancy.square label input[type='checkbox']:after {
+  content: '\f0c8';
+}
+.fancy.square label input[type='checkbox']:checked::after {
+  content: '\f14a';
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-size: calc(1vmax + 0.5em);
+  line-height: 1.4;
+  font-family: sans-serif;
+  display: flex;
+}
+body main {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  padding: 0em;
+}
+
+.fancy label input[type='range'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  display: block;
+  padding: 0;
+  border: 0;
+  width: auto;
+  height: 0.25em;
+  border-radius: 1em;
+  cursor: pointer;
+  font-size: inherit;
+}
+.fancy label input[type='range']::-moz-range-track {
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff;
+  outline: none;
+}
+.fancy label input[type='range']::-moz-focus-outer {
+  border: 0;
+}
+.fancy label input[type='range']::-moz-range-thumb {
+  -moz-appearance: none;
+  appearance: none;
+  width: 1em;
+  height: 1em;
+  border: none;
+  box-shadow: 0 0 0 0.2em #1fc2f5;
+  border-radius: 1em;
+  background: #fff;
+  transform: scale(0.7);
+  transition: 0.3s ease-out;
+}
+.fancy label input[type='range']::-moz-range-thumb:focus,
+.fancy label input[type='range']::-moz-range-thumb:active {
+  -moz-appearance: none;
+  appearance: none;
+  transform: scale(1.5);
+}
+.fancy label input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1em;
+  height: 1em;
+  border: none;
+  box-shadow: 0 0 0 0.2em #1fc2f5;
+  border-radius: 1em;
+  background: #fff;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 0.3s ease-out;
+}
+.fancy label input[type='range']::-webkit-slider-thumb:focus,
+.fancy label input[type='range']::-webkit-slider-thumb:active {
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
